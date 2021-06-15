@@ -11,7 +11,7 @@ function useAsync(currentPage) {
     setError(false);
 
     fetch(
-      `http://jsonplaceholder.typicode.com/posts?_start=${currentPage}&_limit=${limit}`
+      `https://jsonplaceholder.typicode.com/posts?_start=${currentPage}&_limit=${limit}`
     )
       .then((res) => res.json())
       .then((data) => {
